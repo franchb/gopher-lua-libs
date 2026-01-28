@@ -7,6 +7,7 @@ import (
 	"regexp"
 	"strings"
 
+	lua "github.com/franchb/gopher-lua"
 	"github.com/go-viper/mapstructure/v2"
 )
 
