@@ -3,7 +3,7 @@ package base64
 import (
 	"log"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 func ExampleEncodeToString() {

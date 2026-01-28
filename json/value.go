@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 const jsonTableIsObject = "__jsonTableIsObject"

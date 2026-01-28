@@ -1,6 +1,6 @@
 package hex
 
-import lua "github.com/yuin/gopher-lua"
+import lua "github.com/franchb/gopher-lua"
 
 // Preload adds hex to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:

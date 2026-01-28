@@ -3,8 +3,8 @@ package cert_util
 import (
 	"log"
 
-	"github.com/vadv/gopher-lua-libs/time"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	"github.com/franchb/gopher-lua-libs/time"
 )
 
 // cert_util.not_after("host", <ip:port>)

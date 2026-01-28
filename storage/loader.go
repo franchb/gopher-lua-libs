@@ -1,13 +1,13 @@
 package storage
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds storage to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local storage = require("storage")
+//	local storage = require("storage")
 func Preload(L *lua.LState) {
 	L.PreloadModule("storage", Loader)
 }

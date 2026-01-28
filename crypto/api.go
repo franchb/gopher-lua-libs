@@ -7,7 +7,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // MD5 lua crypto.md5(string) return string

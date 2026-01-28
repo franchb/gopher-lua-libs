@@ -2,7 +2,7 @@ package shellescape
 
 import (
 	"al.essio.dev/pkg/shellescape"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 func Quote(L *lua.LState) int {

@@ -3,7 +3,7 @@
 package json
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Decode lua json.decode(string) returns (table, err)
@@ -34,7 +34,7 @@ func Encode(L *lua.LState) int {
 	return 1
 }
 
-//TableIsObject lua json.tableIsObject marks a table as an object (to distinguish between [] and {})
+// TableIsObject lua json.tableIsObject marks a table as an object (to distinguish between [] and {})
 func TableIsObject(L *lua.LState) int {
 	table := L.CheckTable(1)
 	L.SetMetatable(table, L.GetTypeMetatable(jsonTableIsObject))

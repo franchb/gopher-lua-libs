@@ -3,7 +3,7 @@ package inspect
 import (
 	"log"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // inspect(obj)

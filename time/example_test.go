@@ -3,7 +3,7 @@ package time
 import (
 	"log"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // time.sleep(number)

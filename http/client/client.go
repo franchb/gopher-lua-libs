@@ -13,8 +13,8 @@ import (
 	"os"
 	"time"
 
-	lua_json "github.com/vadv/gopher-lua-libs/json"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	lua_json "github.com/franchb/gopher-lua-libs/json"
 )
 
 const (

@@ -2,7 +2,7 @@ package argparse
 
 import (
 	_ "embed"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 //go:embed argparse.lua

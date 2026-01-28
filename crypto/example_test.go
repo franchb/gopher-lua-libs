@@ -3,7 +3,7 @@ package crypto
 import (
 	"log"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // crypto.md5(string)

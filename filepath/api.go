@@ -4,7 +4,7 @@ package filepath
 import (
 	"path/filepath"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Abs returns an absolute representation of path.

@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 type luaRequest struct {
@@ -150,11 +150,12 @@ func HeaderSet(L *lua.LState) int {
 
 // DoRequest lua http_client_ud:do_request()
 // http_client_ud:do_request(http_request_ud) returns (response, error)
-//    response: {
-//      code = http_code (200, 201, ..., 500, ...),
-//      body = string
-//      headers = table
-//    }
+//
+//	response: {
+//	  code = http_code (200, 201, ..., 500, ...),
+//	  body = string
+//	  headers = table
+//	}
 func DoRequest(L *lua.LState) int {
 	client := checkClient(L)
 	req := checkRequest(L, 2)

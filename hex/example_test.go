@@ -3,8 +3,8 @@ package hex
 import (
 	"log"
 
-	"github.com/vadv/gopher-lua-libs/strings"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	"github.com/franchb/gopher-lua-libs/strings"
 )
 
 func ExampleEncodeToString() {

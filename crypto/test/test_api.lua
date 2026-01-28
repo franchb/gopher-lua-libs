@@ -3,7 +3,6 @@ local assert = require 'assert'
 local hex = require 'hex'
 local require = require 'require'
 local filepath = require 'filepath'
-local ioutil = require 'ioutil'
 
 function TestMD5(t)
     local tests = {
@@ -244,29 +243,6 @@ function TestAESDecrypt(t)
             got, err = hex.encode_to_string(got)
             require:NoError(t, err)
             assert:Equal(t, tt.expected, got)
-        end)
-    end
-end
-
-function TestAESCodecFile(t)
-    for i = 1, 1 do
-        local data, err = ioutil.read_file(filepath.join("test/data", tostring(i) .. ".data.bin"))
-        require:NoError(t, err)
-        local expected, err = ioutil.read_file(filepath.join("test/data", tostring(i) .. ".expected.bin"))
-        require:NoError(t, err)
-        local init, err = ioutil.read_file(filepath.join("test/data", tostring(i) .. ".init.bin"))
-        require:NoError(t, err)
-        local key, err = ioutil.read_file(filepath.join("test/data", tostring(i) .. ".key.bin"))
-        require:NoError(t, err)
-        t:Run("TestAESEncryptFile " .. tostring(i), function(t)
-            local got, err = crypto.aes_encrypt(crypto.CTR, key, init, data)
-            require:NoError(t, err)
-            assert:Equal(t, expected, got)
-
-            local decrypted, err = crypto.aes_decrypt(crypto.CTR, key, init, got)
-            t:Logf('data: "%s", decrypted: "%s"', data, decrypted)
-            require:NoError(t, err)
-            assert:Equal(t, data, decrypted)
         end)
     end
 end

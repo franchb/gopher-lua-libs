@@ -3,7 +3,7 @@ package util
 import (
 	"net/url"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // QueryEscape lua http.query_escape(string) returns escaped string

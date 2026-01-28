@@ -1,11 +1,11 @@
 package pprof_test
 
 import (
+	lua_http "github.com/franchb/gopher-lua-libs/http"
+	lua_pprof "github.com/franchb/gopher-lua-libs/pprof"
+	"github.com/franchb/gopher-lua-libs/tests"
+	lua_time "github.com/franchb/gopher-lua-libs/time"
 	"github.com/stretchr/testify/assert"
-	lua_http "github.com/vadv/gopher-lua-libs/http"
-	lua_pprof "github.com/vadv/gopher-lua-libs/pprof"
-	"github.com/vadv/gopher-lua-libs/tests"
-	lua_time "github.com/vadv/gopher-lua-libs/time"
 	"testing"
 )
 

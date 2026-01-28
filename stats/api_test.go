@@ -1,8 +1,8 @@
 package stats
 
 import (
+	"github.com/franchb/gopher-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 )
 

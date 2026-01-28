@@ -4,8 +4,8 @@ import (
 	"sync"
 
 	mustache "github.com/cbroglie/mustache"
-	gluamapper "github.com/yuin/gluamapper"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	"github.com/franchb/gopher-lua-libs/gluamapper"
 )
 
 type luaMustache struct {

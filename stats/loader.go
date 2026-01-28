@@ -1,13 +1,13 @@
 package stats
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds stats to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local stats = require("stats")
+//	local stats = require("stats")
 func Preload(L *lua.LState) {
 	L.PreloadModule("stats", Loader)
 }

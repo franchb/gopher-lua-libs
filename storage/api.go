@@ -2,10 +2,10 @@
 package storage
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 
-	drivers "github.com/vadv/gopher-lua-libs/storage/drivers"
-	interfaces "github.com/vadv/gopher-lua-libs/storage/drivers/interfaces"
+	drivers "github.com/franchb/gopher-lua-libs/storage/drivers"
+	interfaces "github.com/franchb/gopher-lua-libs/storage/drivers/interfaces"
 )
 
 const (

@@ -3,10 +3,10 @@ package storage
 import (
 	"log"
 
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
-	time "github.com/vadv/gopher-lua-libs/time"
+	inspect "github.com/franchb/gopher-lua-libs/inspect"
+	time "github.com/franchb/gopher-lua-libs/time"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // storage.open(), storage_ud:get(), storage_ud:set()

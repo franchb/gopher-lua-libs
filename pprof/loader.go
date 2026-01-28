@@ -1,13 +1,13 @@
 package pprof
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds pprof to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local pprof = require("pprof")
+//	local pprof = require("pprof")
 func Preload(L *lua.LState) {
 	L.PreloadModule("pprof", Loader)
 }
