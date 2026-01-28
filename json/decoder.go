@@ -2,8 +2,9 @@ package json
 
 import (
 	"encoding/json"
-	"github.com/vadv/gopher-lua-libs/io"
-	lua "github.com/yuin/gopher-lua"
+
+	lua "github.com/franchb/gopher-lua"
+	"github.com/franchb/gopher-lua-libs/io"
 )
 
 const (

@@ -4,7 +4,7 @@ package xmlpath
 import (
 	"bytes"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 	xmlpath "gopkg.in/xmlpath.v2"
 )
 

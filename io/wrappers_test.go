@@ -1,9 +1,9 @@
 package io
 
 import (
+	lua "github.com/franchb/gopher-lua"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	lua "github.com/yuin/gopher-lua"
 	"io"
 	"io/ioutil"
 	"os"

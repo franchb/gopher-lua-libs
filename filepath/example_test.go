@@ -1,3 +1,4 @@
+//go:build !windows && !plan9
 // +build !windows,!plan9
 
 package filepath
@@ -5,8 +6,8 @@ package filepath
 import (
 	"log"
 
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	inspect "github.com/franchb/gopher-lua-libs/inspect"
 )
 
 // filepath.ext(string)

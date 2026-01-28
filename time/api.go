@@ -4,7 +4,7 @@ package time
 import (
 	"time"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Unix lua time.unix() returns unix timestamp in seconds (float)

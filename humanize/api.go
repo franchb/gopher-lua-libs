@@ -5,7 +5,7 @@ import (
 	"time"
 
 	humanize "github.com/dustin/go-humanize"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Time lua humanize.time(number) return string

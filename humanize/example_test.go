@@ -3,8 +3,8 @@ package humanize
 import (
 	"log"
 
-	time "github.com/vadv/gopher-lua-libs/time"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	time "github.com/franchb/gopher-lua-libs/time"
 )
 
 // humanize.ibytes(number)

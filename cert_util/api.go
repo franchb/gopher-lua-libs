@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // NotAfter lua cert.not_after(hostname, <ip>) returns (unixts cert_not_after, err)

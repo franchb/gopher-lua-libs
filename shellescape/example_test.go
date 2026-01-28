@@ -1,7 +1,7 @@
 package shellescape
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 	"log"
 )
 

@@ -2,9 +2,9 @@ package tests
 
 import (
 	_ "embed"
+	lua "github.com/franchb/gopher-lua"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	lua "github.com/yuin/gopher-lua"
 	"io/ioutil"
 	"os"
 	"strings"
@@ -220,7 +220,7 @@ func registerTType(L *lua.LState) {
 
 func LoadSuite(L *lua.LState) int {
 	if err := L.DoString(lua_suite); err != nil {
-		L.RaiseError(err.Error())
+		L.RaiseError("%s", err.Error())
 	}
 	return 1
 }
@@ -231,7 +231,7 @@ func PreloadSuite(L *lua.LState) {
 
 func LoadAssertions(L *lua.LState) int {
 	if err := L.DoString(lua_assertions); err != nil {
-		L.RaiseError(err.Error())
+		L.RaiseError("%s", err.Error())
 	}
 	return 1
 }
@@ -242,7 +242,7 @@ func PreloadAssertions(L *lua.LState) {
 
 func LoadAssert(L *lua.LState) int {
 	if err := L.DoString(lua_assert); err != nil {
-		L.RaiseError(err.Error())
+		L.RaiseError("%s", err.Error())
 	}
 	return 1
 }
@@ -253,7 +253,7 @@ func PreloadAssert(L *lua.LState) {
 
 func LoadRequre(L *lua.LState) int {
 	if err := L.DoString(lua_require); err != nil {
-		L.RaiseError(err.Error())
+		L.RaiseError("%s", err.Error())
 	}
 	return 1
 }

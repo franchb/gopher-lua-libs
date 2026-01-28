@@ -1,9 +1,9 @@
 package base64
 
 import (
+	"github.com/franchb/gopher-lua-libs/strings"
+	"github.com/franchb/gopher-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/strings"
-	"github.com/vadv/gopher-lua-libs/tests"
 	"testing"
 )
 

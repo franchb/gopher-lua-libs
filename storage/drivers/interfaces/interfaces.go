@@ -1,6 +1,6 @@
 package interfaces
 
-import lua "github.com/yuin/gopher-lua"
+import lua "github.com/franchb/gopher-lua"
 
 type Driver interface {
 	New(path string) (Driver, error)

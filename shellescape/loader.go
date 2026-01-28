@@ -1,13 +1,13 @@
 package shellescape
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds json to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local json = require("json")
+//	local json = require("json")
 func Preload(L *lua.LState) {
 	L.PreloadModule("shellescape", Loader)
 }

@@ -1,13 +1,13 @@
 package xmlpath
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds xmlpath to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local xmlpath = require("xmlpath")
+//	local xmlpath = require("xmlpath")
 func Preload(L *lua.LState) {
 	L.PreloadModule("xmlpath", Loader)
 }

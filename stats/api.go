@@ -4,8 +4,8 @@ package stats
 import (
 	"fmt"
 
+	lua "github.com/franchb/gopher-lua"
 	gostats "github.com/montanaflynn/stats"
-	lua "github.com/yuin/gopher-lua"
 )
 
 // get float slice from table

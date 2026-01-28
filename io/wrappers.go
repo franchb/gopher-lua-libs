@@ -3,7 +3,7 @@ package io
 import (
 	"errors"
 	"fmt"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 	"io"
 	"io/ioutil"
 )
@@ -18,7 +18,7 @@ type luaIOWrapper struct {
 	closeMethod *lua.LFunction
 }
 
-//NewLuaIOWrapper creates a new luaIOWrapper atop the lua io object
+// NewLuaIOWrapper creates a new luaIOWrapper atop the lua io object
 func NewLuaIOWrapper(L *lua.LState, io lua.LValue) *luaIOWrapper {
 	ret := &luaIOWrapper{
 		ls:  L,
@@ -31,7 +31,7 @@ func NewLuaIOWrapper(L *lua.LState, io lua.LValue) *luaIOWrapper {
 	return ret
 }
 
-//CheckIOWriter tries to cast to UserData and to io.Writer, otherwise it wraps and checks for "write" method
+// CheckIOWriter tries to cast to UserData and to io.Writer, otherwise it wraps and checks for "write" method
 func CheckIOWriter(L *lua.LState, n int) io.Writer {
 	any := L.CheckAny(n)
 	if ud, ok := any.(*lua.LUserData); ok {
@@ -47,7 +47,7 @@ func CheckIOWriter(L *lua.LState, n int) io.Writer {
 	return wrapped
 }
 
-//CheckIOReader tries to cast to UserData and to io.Reader, otherwise it wraps and checks for "read" method
+// CheckIOReader tries to cast to UserData and to io.Reader, otherwise it wraps and checks for "read" method
 func CheckIOReader(L *lua.LState, n int) io.Reader {
 	any := L.CheckAny(n)
 	if ud, ok := any.(*lua.LUserData); ok {

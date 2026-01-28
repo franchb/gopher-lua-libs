@@ -3,8 +3,8 @@ package strings
 import (
 	"log"
 
-	inspect "github.com/vadv/gopher-lua-libs/inspect"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	inspect "github.com/franchb/gopher-lua-libs/inspect"
 )
 
 // strings.split(string, sep)

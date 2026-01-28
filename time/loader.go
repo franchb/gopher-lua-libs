@@ -1,13 +1,13 @@
 package time
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds time to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local time = require("time")
+//	local time = require("time")
 func Preload(L *lua.LState) {
 	L.PreloadModule("time", Loader)
 }

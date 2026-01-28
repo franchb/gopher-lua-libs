@@ -3,7 +3,7 @@ package xmlpath
 import (
 	"log"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // xmlpath.compile, xmlpath.load, xmlpath_node_ud, xmlpath_path_ud, xmlpath_iter_ud

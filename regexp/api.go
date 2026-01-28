@@ -4,7 +4,7 @@ package regexp
 import (
 	"regexp"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 type luaRegexp struct {

@@ -1,13 +1,13 @@
 package strings
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds strings to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local strings = require("strings")
+//	local strings = require("strings")
 func Preload(L *lua.LState) {
 	L.PreloadModule("strings", Loader)
 }

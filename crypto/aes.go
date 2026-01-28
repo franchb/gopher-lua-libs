@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 type mode uint

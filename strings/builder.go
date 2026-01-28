@@ -1,8 +1,8 @@
 package strings
 
 import (
-	lio "github.com/vadv/gopher-lua-libs/io"
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
+	lio "github.com/franchb/gopher-lua-libs/io"
 	"strings"
 )
 

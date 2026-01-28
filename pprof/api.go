@@ -7,7 +7,7 @@ import (
 	_ "net/http/pprof"
 	"time"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 type luaPprof struct {

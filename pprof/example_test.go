@@ -3,11 +3,11 @@ package pprof_test
 import (
 	"log"
 
-	lua_http "github.com/vadv/gopher-lua-libs/http"
-	lua_pprof "github.com/vadv/gopher-lua-libs/pprof"
-	lua_time "github.com/vadv/gopher-lua-libs/time"
+	lua_http "github.com/franchb/gopher-lua-libs/http"
+	lua_pprof "github.com/franchb/gopher-lua-libs/pprof"
+	lua_time "github.com/franchb/gopher-lua-libs/time"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // pprof:register(), pprof_ud:enable(), pprof_ud:disable()

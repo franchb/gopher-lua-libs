@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	lua_json "github.com/vadv/gopher-lua-libs/json"
-	interfaces "github.com/vadv/gopher-lua-libs/storage/drivers/interfaces"
+	lua_json "github.com/franchb/gopher-lua-libs/json"
+	interfaces "github.com/franchb/gopher-lua-libs/storage/drivers/interfaces"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 var listOfStorages = &listStorages{list: make(map[string]*Storage)}

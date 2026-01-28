@@ -3,8 +3,8 @@ package bit
 import (
 	"testing"
 
+	"github.com/franchb/gopher-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/tests"
 )
 
 func TestApi(t *testing.T) {

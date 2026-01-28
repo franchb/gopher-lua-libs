@@ -3,13 +3,13 @@ package http
 // Package http_client implements golang package http_client utility functionality for lua.
 
 import (
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Preload adds http_client to the given Lua state's package.preload table. After it
 // has been preloaded, it can be loaded using require:
 //
-//  local http_client = require("http_client")
+//	local http_client = require("http_client")
 func Preload(L *lua.LState) {
 	L.PreloadModule("http_client", Loader)
 }

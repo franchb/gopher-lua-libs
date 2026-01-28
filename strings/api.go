@@ -4,7 +4,7 @@ package strings
 import (
 	"strings"
 
-	lua "github.com/yuin/gopher-lua"
+	lua "github.com/franchb/gopher-lua"
 )
 
 // Split lua strings.split(string, sep): port of go string.Split() returns table

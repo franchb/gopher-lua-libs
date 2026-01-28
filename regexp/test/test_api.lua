@@ -25,16 +25,3 @@ function Test_find_all_string_submatch(t)
         assert(result[1][3] == "world", "not found: " .. tostring(result[1][3]))
     end)
 end
-
-function Test_match(t)
-    local found, err = regexp.match("(gopher){2}", "gophergopher")
-    assert(not err, err)
-    assert(found, "must be matched")
-end
-
-function Test_find_all_string_submatch(t)
-    local result, err = regexp.find_all_string_submatch("string: '(.*)\\s+(.*)'$", "my string: 'hello world'")
-    assert(not err, err)
-    assert(result[1][2] == "hello", "not found: " .. tostring(result[1][2]))
-    assert(result[1][3] == "world", "not found: " .. tostring(result[1][3]))
-end

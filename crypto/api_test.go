@@ -3,11 +3,10 @@ package crypto
 import (
 	"testing"
 
+	"github.com/franchb/gopher-lua-libs/filepath"
+	"github.com/franchb/gopher-lua-libs/hex"
+	"github.com/franchb/gopher-lua-libs/tests"
 	"github.com/stretchr/testify/assert"
-	"github.com/vadv/gopher-lua-libs/filepath"
-	"github.com/vadv/gopher-lua-libs/hex"
-	"github.com/vadv/gopher-lua-libs/ioutil"
-	"github.com/vadv/gopher-lua-libs/tests"
 )
 
 func TestApi(t *testing.T) {
@@ -15,7 +14,6 @@ func TestApi(t *testing.T) {
 		Preload,
 		filepath.Preload,
 		hex.Preload,
-		ioutil.Preload,
 	)
 	assert.NotZero(t, tests.RunLuaTestFile(t, preload, "./test/test_api.lua"))
 }
